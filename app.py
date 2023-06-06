@@ -1,11 +1,10 @@
 from flask import Flask, render_template, request
 import openai
-import config
 import os
 
 app = Flask(__name__, static_url_path='/static')
 
-api_key = config.API_KEY
+api_key = os.getenv('API_KEY')
 openai.api_key = api_key
 
 @app.route('/')
