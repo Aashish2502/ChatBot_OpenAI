@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Chivo+Mono:wght@600&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <title>Chatbot Helpdesk</title>
+</head>
+<body>
+    <div class="masterContainer">
+        <h1>CHATBOT HELPDESK</h1>
+        <div class="formContainer">
+            <form action="/chat" method="POST">
+                <div class="subDir">
+                    <label for="condition">Select Condition:</label>
+                    <select name="condition" id="condition">
+                        <option>--Select--</option>
+                        <option value="Lung Cancer">Lung Cancer</option>
+                        <option value="Insomnia">Insomnia</option>
+                        <option value="Migrane">Migrane</option>
+                        
+                    </select>
+                </div>
+                
+                <br>
+                <div class="subDir">
+                    <label for="severity">Select Severity:</label>
+                    <select name="severity" id="severity">
+                        <option>--Select--</option>
+                        <option value="Stage-1">Stage-1</option>
+                        <option value="Stage-2">Stage-2</option>
+                        <option value="Stage-3">Stage-3</option>
+                    </select>
+                </div>
+                
+                <br>
+                <input class="customButton" type="submit" value="Chat">
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+
+
+
+
+                        
+                        

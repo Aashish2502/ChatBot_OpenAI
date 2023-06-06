@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#D2E9E9;
+  }
+ div {
+  text-align: center;
+ }
+
+ .response {
+  margin: 0 10%;
+  background-color: #E3F4F4;
+  padding: 2px 2px;
+  border-radius: 20px;
+ }
+
+ p  {
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 600;
+  font-size: 24px;
+  color: #187092;
+ }
+
+ h1 {
+  font-family: 'Racing Sans One', cursive;
+  font-size: 60px;
+  color: #0A4D68;
+ }
+
+ h3,label {
+  font-size: 30px;
+  font-family: 'Cantora One', sans-serif;
+  color: #0A4D68;
+ }
+
+ .masterContainer {
+  padding-top: 10%;
+ }
+
+ .reply {
+  padding: 2% 0;
+ }
+
+ .customButton {
+  background-color: #186481;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customButton:hover {
+  background-color: #0A4D68;
+}
+
+
+.subDir {
+  position: relative;
+}
+
+.subDir select {
+  position: relative;
+  top: -5px; 
+  width: 20%;
+  border-radius: 5px;
+}
+
+.subDir label {
+  margin-right: 10px;
+}
