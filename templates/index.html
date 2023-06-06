@@ -16,10 +16,9 @@
                 <div class="subDir">
                     <label for="condition">Select Condition:</label>
                     <select name="condition" id="condition">
-                        <option>--Select--</option>
-                        <option value="Lung Cancer">Lung Cancer</option>
-                        <option value="Insomnia">Insomnia</option>
-                        <option value="Migrane">Migrane</option>
+                        {% for condition in conditions %}
+                        <option value="{{ condition }}">{{ condition }}</option>
+                        {% endfor %}
                         
                     </select>
                 </div>
