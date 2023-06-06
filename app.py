@@ -5,8 +5,8 @@ from diseases import diseases
 
 app = Flask(__name__, static_url_path='/static')
 
-# api_key = os.getenv('API_KEY')
-api_key = "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"
+api_key = os.getenv('API_KEY')
+
 
 openai.api_key = api_key
 
