@@ -18,10 +18,22 @@
         <br>
         <div class="response">
             <h3><strong>Chatbot Response</strong></h3>
-            <p>{{ reply }}</p>
+            <p id="speakReply">{{ reply }}</p>
+            
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maxime amet minus, repellendus, aperiam illo facilis debitis non qui nihil architecto a libero ipsum neque deleniti. Quasi quaerat optio voluptatem.</p> -->
         </div>
-        
+       
     </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const replyText = "{{ reply }}";
+            const speech = new SpeechSynthesisUtterance(replyText);
+            speechSynthesis.speak(speech);
+        });
+    </script>
+    
 </body>
+
+
+
 </html>

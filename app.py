@@ -5,6 +5,7 @@ import os
 app = Flask(__name__, static_url_path='/static')
 
 api_key = os.getenv('API_KEY')
+
 openai.api_key = api_key
 
 @app.route('/')
@@ -27,7 +28,7 @@ def chat():
         temperature=0.5,
     )
     reply = res.choices[0].text.strip()
-
+    
     return render_template('reply.html', condition=condition, severity=severity, reply=reply)
 
 
